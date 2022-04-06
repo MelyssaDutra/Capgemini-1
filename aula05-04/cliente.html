@@ -6,10 +6,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .container-form {
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            margin-top: 5px;
+        }
+
+        .container-botoes {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 
-<body>
-    <h1>Cadastro de cliente</h1>
+<body style="background-color: palevioletred;">
+
+    <div class="container">
+        <h1 style="color: white;">Cadastro de cliente</h1>
+        <form class="container-form">
+            <input type="text" id="nome" name="nome" placeholder="nome">
+            <input type="text" id="fone" name="fone" placeholder="fone">
+            <input type="text" id="email" name="email" placeholder="email">
+            <input type="text" id="rua" name="rua" placeholder="rua">
+            <input type="text" id="bairro" name="bairro" placeholder="bairro">
+            <input type="text" id="cep" name="cep" placeholder="cep">
+            <input type="text" id="limite" name="limite" placeholder="limite de cretido">
+            <img id="blah" src="download.jfif" alt="foto de gatinho" width="150" style="margin-top: 10px;">
+            <div class="container-botoes">
+                <input type="button" value="Salvar" id="btSalvar" style="margin-right: 20px;">
+                <input type="button" value="Cancelar" id="btCancelar">
+            </div>
+        </form>
+    </div>
+
+
 </body>
 
 </html>
